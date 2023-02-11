@@ -7,7 +7,7 @@ import Cart from "./components/Cart";
 import Login from "./components/Login";
 import Signupform from "./components/Signupform";
 import Checkout from "./components/Checkout";
-import Dataprovider from "./context/Dataprovider";
+
 
 
 import "./styles/app.scss";
@@ -36,8 +36,8 @@ function App() {
         /> <
         Route path = "/Checkout/:id"
         element = { < Checkout / > }
-        /> <
-        /Routes> <
+        /> < /
+        Routes > <
         Toaster / >
         <
         /BrowserRouter>

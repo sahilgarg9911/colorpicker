@@ -1,10 +1,10 @@
 import React from 'react';
 import { useEffect } from 'react';
 import { useState } from 'react';
-import { useSelector } from 'react-redux';
+
 import { useDispatch } from 'react-redux';
 import { useParams } from 'react-router-dom';
-import { Link } from 'react-router-dom';
+
 import '../styles/Checkout.css';
 import Stars from './Stars';
 import toast from "react-hot-toast";
@@ -43,16 +43,8 @@ function Checkout() {
       if(param?.id) {
           data();
       }
-      // console.log(param?.id);
-      // console.log(itm);
   }, [param?.id])
-  // console.log(itm)
 
-const addToCartHandler = (options) => {
-  dispatch({ type: "addToCart", payload: options });
-  dispatch({ type: "calculatePrice" });
-  toast.success("Added To Cart");
-};
 
   return (
     <>

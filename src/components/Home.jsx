@@ -4,7 +4,6 @@ import toast from "react-hot-toast";
 import { useDispatch } from "react-redux";
 import { Link } from 'react-router-dom';
 import '../styles/home.css';
-import Banner from "./Banner";
 
 const Home = () => {
 
