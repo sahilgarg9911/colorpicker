@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { useSelector } from "react-redux";
 import '../styles/header.css';
 import { useNavigate } from "react-router-dom";
-import Banner from "./Banner";
+
 
 const Header = () => {
   const { cartItems } = useSelector((state) => state.cart);
@@ -95,7 +95,6 @@ const Header = () => {
 
 
     </nav>
-    {/* <Banner/> */}
     </>
   );
 };
