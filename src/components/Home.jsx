@@ -33,7 +33,7 @@ const Home = () => {
   };
   return (
     <div className="mainhomediv">
-      <Banner/>
+    
       
 
 <div className="home">
