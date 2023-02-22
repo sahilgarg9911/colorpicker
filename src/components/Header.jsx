@@ -8,18 +8,8 @@ import { useNavigate } from "react-router-dom";
 const Header = () => {
   const { cartItems } = useSelector((state) => state.cart);
 
-
-//   const [results, setResults] = useSearch();
-
-    
-        // const loggeduser = JSON.parse( localStorage.getItem("loginDetails"));
-        // console.log("header"+ loggeduser);
-        // console.log(loggeduser);
-        // console.log(loggeduser[0].name);
-
         const username = JSON.parse(localStorage.getItem("user"));
         const isloggedin = JSON.parse(localStorage.getItem("isloggedin"));
-    
 
         const navigate = useNavigate();
         const handlelogout = () => {
@@ -33,20 +23,14 @@ const Header = () => {
     <>
 
 <nav className="header">
-
-            {/* <i class="fa-regular fa-star"></i> */}
             
     <div className='headerTop' >
-
-    {/* <button>logout</button> */}
-
-        {/* logo*/}
         <Link to="/" className='logolink'>
             <img src='https://image.pitchbook.com/IIZvz8HxGpxmd4nnI5Irsnm0JAx1666857561209_200x200' alt='' className='logo' />
             
 
         </Link>
-        {/* logo*/}
+  
 
         <div className='headerSearch'>
     
@@ -60,22 +44,18 @@ const Header = () => {
 
         </div>
         
-
-        {/* Links */}
         <div className='headerNavbar' >
-            {/* signout/ signin */}
+
 
             {
         isloggedin ? <button className='searchbtn logoutbtn' onClick={handlelogout}>Logout</button> : <Link to="/Login" className='headerLink' ><button className='searchbtn'>Login</button></Link>
     }
-            {/* <Link to="/Login" className='headerLink' >
-            <button className='searchbtn'>Login</button>
-            </Link> */}
+       
 
             <h5 className="username">{isloggedin ?  username.name : " "}</h5>
             
 
-            {/*Return Order */}
+     
             <Link to="/Orders" className='headerLink' >
                 <div className='headerOptions' >
                     <span className='headerOption_One'>Return</span>
