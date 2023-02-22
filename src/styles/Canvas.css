@@ -1,0 +1,98 @@
+ /* .maincolorpickerdiv {
+     display: flex;
+     flex-direction: column;
+     justify-content: space-around;
+ } */
+ 
+ @media screen and (min-width: 580px) {
+     .maincolorpickerdiv {
+         display: flex;
+         justify-content: space-around;
+         /* background-color: blue; */
+         margin-top: 35px;
+     }
+ }
+ 
+ @media screen and (max-width: 580px) {
+     .maincolorpickerdiv {
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+         /* background-color: red; */
+         margin: 20px;
+     }
+ }
+ 
+ .colorspan {
+     border: 1px solid;
+     margin: auto;
+     color: white;
+     background-color: black;
+ }
+ 
+ .canvasdiv {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     border: 1px solid black;
+ }
+ 
+ .maindiv {
+     display: flex;
+     justify-content: space-around;
+     margin-top: 30px;
+ }
+ 
+ .zoomed {
+     transform: scale(3.2);
+     transition: transform 1s ease-in;
+     transition: transform 1s ease-out;
+ }
+ 
+ * {
+     cursor: none;
+ }
+ 
+ .App {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+ }
+ /* .title {
+     font-size: 10rem;
+ } */
+ 
+ .cursor {
+     background-color: #111;
+     height: 32px;
+     width: 32px;
+     border-radius: 50%;
+     position: fixed;
+     top: 0;
+     left: 0;
+     pointer-events: none;
+ }
+ 
+ .selectorsize {
+     width: 100%;
+     text-align: center;
+ }
+ 
+ @media screen and (max-width: 580px) {
+     .maindiv {
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+         /* background-color: red; */
+         margin: 20px;
+     }
+     * {
+         /* background-color: red; */
+         padding: 10%;
+     }
+     .colorplate {
+         margin-bottom: 20px;
+     }
+ }
